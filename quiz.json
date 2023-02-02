@@ -1,0 +1,149 @@
+[  
+  { 
+  "difficulty":"Easy",
+  "questions": [
+    {
+    "index": 1,
+    "prompt": "voir le code ci-dessous",
+    "type": "code",
+    "code": "a = 5 \nb = a - 2 \nprint (a*b)", 
+    "options": ["3", "15", "10", "8"],
+    "answer": "15",
+    "points": 2
+    },
+    {
+    },
+    {
+    "index": 2,
+    "prompt": "voir le code ci-dessous",
+    "type": "code",
+    "code": "Quel est le resultat du script suivant : \n a =1 \n b='4' \n print (a+b)",
+    "options": ["4", "13", "-4", "Erreur"],
+    "answer": "Erreur",
+    "points": 2
+    },
+    {
+    "index": 3,
+    "prompt": "voir le code ci-dessous",
+    "type": "code",
+    "code": "Quel est resultat du test suivant \n a = 21 \n b = 5 \n print ( (a//b) + (a%b) ) ",
+    "options": ["5.2", "5", "4", "5.25"],
+    "answer": "5",
+    "points": 2
+    },
+    {
+    "index": 4,
+    "prompt": "voir le code ci-dessous",
+    "type": "code",
+    "code": "for k in range(3): \n print(k)",
+    "options": ["1/2/3", "0/1/2", "0/3/6", "0/1/2/3"],
+    "answer": "0/1/2",
+    "points": 2
+    },
+    {
+    "index": 5,
+    "prompt": "voir le code ci-dessous",
+    "type" : "code",
+    "code" : "Quel est le resultat du script suivant ? \n print(int('5')+'5'+str(5))",
+    "options": ["555", "Erreur", "15", "5\"10\""],
+    "answer": "Erreur",
+    "points": 2
+    }
+    ]
+  },
+  {
+  "difficulty":"Intermediate",
+  "questions":[
+    {
+    "index": 1,
+    "prompt": "voir le code ci-dessous",
+    "type": "code",
+    "code": "texte = \"Un robot ne peut porter atteinte a un etre humain\"\ncompteur = 0\nfor lettre in texte :\nif lettre == \"e\":\ncompteur = compteur + 1\nprint(compteur)",
+    "options": ["11", "7", "6", "10"],
+    "answer": "7",
+    "points": 3.5
+  },
+  {
+    "index": 2,
+    "prompt": "voir le code ci-dessous",
+    "type": "code",
+    "code": "for value in range(10):\nif value == 5:\ncontinue\nprint(value, end=\" \")",
+    "options": ["0 1 2 3 4 5 6 7 8 9", "0 1 2 3 4 6 7 8 9", "1 2 3 4 6 7 8 9 10", "Erreur"],
+    "answer": "0 1 2 3 4 6 7 8 9",
+    "points": 3.5
+  },
+  {
+    "index": 3,
+    "prompt": "Choisissez la proposition correcte:",
+    "options": ["l operateur is et == font la meme chose.", "l operateur is permet de verifier si deux objets ont la meme valeur ou non.", "l operateur is est utilise pour verifier si deux objets font reference au meme emplacement memoire ou non.", "l operateur == permet a attribuer une valeur a une variable."],
+    "answer": "l operateur is est utilise pour verifier si deux objets font reference au meme emplacement memoire ou non.",
+    "points": 3.5
+  },
+  {
+    "index": 4,
+    "prompt": "voir le code ci-dessous",
+    "type": "code",
+    "code": "Qu affiche le script ?\nn = 0\nfor i in range(5) :\nn = n + 1\nprint(i)",
+    "options": ["4", "5", "6", "7"],
+    "answer": "4",
+    "points": 3.5
+  },
+  {
+    "index": 5,
+    "prompt": "voir le code ci-dessous",
+    "type" : "code",
+    "code" : "Comment recuperer l element \"Python\" dans cette liste\nListe=[1,2, [5,\"python\",3],7]",
+    "options": ["liste[2][1]", "liste[3][2]", "liste[2][,\"python\"]", "liste[3][,\"python\"]"],
+    "answer": "liste[2][1]",
+    "points": 3.5
+
+  }
+  ]
+  },
+  {
+  "difficulty":"Hard",
+  "questions":[
+    {
+    "index": 1,
+    "prompt": "Que fait la fonction __init__() en Python?",
+    "options": ["Initialise la classe pour l utilisation.", "Cette fonction est appelee lorsqu  un nouvel objet est instancie.", "Initialise tous les attributs de donnees a zero lors de l appel.", "Aucune de ces reponses n est vraie."],
+    "answer": "Cette fonction est appelee lorsqu  un nouvel objet est instancie.",
+    "points": 4.5
+    },
+   {
+    "index": 2,
+    "prompt": "voir le code ci-dessous",
+    "type" : "code",
+    "code" : "try:\n# code pouvant generer une erreur\npass\nexcept (ZeroDivisionError, TypeError):\nprint(\"Message error\")",
+    "options": ["Affiche \" Message error \" si une exception survient (peu importe l exception)", "Affiche \" Message error \" si aucune exception ne se produit.", "Affiche \" Message error \" si une exception TypeError ou ZeroDivisionError se produit.", "Affiche \" Message error \" uniquement si les deux exceptions TypeError et ZeroDivisionError se produisent."],
+    "answer": "Affiche \" Message error \" si une exception TypeError ou ZeroDivisionError se produit.",
+    "points": 4.5
+    },
+    {
+    "index": 3,
+    "prompt": "Laquelle des enoncees suivantes est vrai?",
+    "options": ["Vous ne pouvez pas chainer plusieurs decorateurs en Python", "Les decorateurs ne fonctionnent pas avec des fonctions qui prennent des parametres.", "Le symbole @ n a aucune utilite lorsque vous utilisez des decorateurs", "Aucune de ces reponses n est vraie."],
+    "answer": "Aucune de ces reponses n est vraie. ",
+    "points": 4.5
+  },
+  {
+    "index": 4,
+    "prompt": "Laquelle des enoncees suivantes est vrai?",
+    "options": ["Vous ne pouvez pas creer d exceptions personnalisees en Python", "Vous pouvez creer une exception definie par l utilisateur en heritant la classe Exception.", "Vous pouvez creer une exception definie par l utilisateur en heritant la classe Error.", "Aucune de ces reponses n est vraie."],
+    "answer": "Vous pouvez creer une exception definie par l utilisateur en heritant la classe Exception.",
+    "points": 4.5
+  },
+  {
+    "index": 5,
+    "prompt": "Laquelle des enoncees suivantes est vrai?",
+    "options": [
+      "Les fonctions sont utilisees pour creer des objets en Python", 
+      "Les fonctions rendent votre programme plus rapide", 
+      "Une fonction est un morceau de code qui effectue une tache specifique.", 
+      "Tout les reponses sont vrais"],
+    "answer": "Une fonction est un morceau de code qui effectue une tache specifique.",
+    "points": 4.5
+  }
+]
+}
+]
