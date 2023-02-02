@@ -8,7 +8,7 @@ class Appraisal:
         if 'step' not in st.session_state:
             st.session_state.step = 0
         if 'user_id' not in st.session_state:
-            st.session_state.user_id = str(uuid.uuid4()[0])
+            st.session_state.user_id = str(uuid.uuid4())
         if 'title' not in st.session_state:
             st.session_state.title = "Evoluation niveau Python"
         if 'score' not in st.session_state:
@@ -75,6 +75,9 @@ class Appraisal:
     
     def back_to_menu(self):
         st.session_state.step = 0
+        st.session_state.score=0
+        st.session_state.answers_list=[]
+        st.session_state.question_list= self.get_questions()
 
     def compose_question(self, question, id):
         try:
